@@ -1,0 +1,395 @@
+:root {
+    --light : rgb(228, 220, 198);
+    --light-text : rgb(192, 189, 178);
+    --dark-text : rgb(102, 109, 110);
+    --dark : rgb(165, 171, 172);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2 , h3 {
+    text-transform: uppercase;
+    color: var(--dark-text);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background: var(--light);
+    z-index: 2;
+    
+}
+
+.navbar {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.links {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem;
+    color: var(--dark-text);
+}
+
+.links:hover {
+    color: var(--light);
+    background: var(--dark-text);
+    border-radius: 0.25rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.main {
+    margin-top: 4rem;
+    width: 100%;
+    border-bottom: 1rem solid var(--light-text);
+}
+
+.title {
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+h1 span {
+    color: var(--light-text);
+}
+
+.line {
+    height: 0.3rem;
+    background: var(--dark-text);
+}
+
+.section-image {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background: url(../img/backlit-chiemsee-dawn-1363876.jpg) center center/cover;
+    border-bottom: 2rem solid var(--light-text);
+}
+
+.image-text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    opacity: 0.8;
+}
+
+.image-text h1 {
+    color: var(--light);
+    font-size: 2rem;
+}
+
+.image-text p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: var(--dark-text);
+}
+
+.btn-go {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    padding: 1.5rem 5rem;
+    background: transparent;
+    color: var(--dark-text);
+    border: 0.3rem solid var(--dark-text);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-go:hover {
+    transition: all 0.5s;
+    border: 0.3rem solid var(--light-text);
+    color: var(--light-text);
+}
+
+.icon-section {
+    width: 60%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.icon-section div {
+    margin-top: 2rem;
+}
+
+.icon-section h2 {
+    font-size: 2rem;
+}
+
+.icon-section h3 {
+    margin-top: 1rem;
+    font-weight: 550;
+    font-size: 1.5rem;
+    color: var(--light-text);
+    text-transform: uppercase;
+}
+
+.circle {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle a {
+    text-decoration: none;
+    background: var(--light-text);
+    padding: 3rem 3.5rem;
+    border-radius: 50%;
+    color: rgb(245, 245, 245);
+}
+
+.circle a:hover {
+    transition: all 0.75s ease;
+    background: rgb(142, 162, 167);
+}
+
+.major {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.gallery-section {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2.5rem ;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-section p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--dark-text);
+}
+
+.gallery-section img {
+    border-radius: 0.3rem;
+    filter: hue-rotate(45deg);
+    filter: brightness(60%);
+    cursor: pointer;
+}
+
+.buttons {
+    width: 80%;
+    margin: 5rem auto;
+    justify-content: center;
+    display: flex;
+}
+
+.buttons > button {
+    margin: 1rem;
+    padding: 1.8rem 3rem;
+    border-radius: 0.4rem;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.buttons :nth-child(1) {
+    background-color: rgb(36, 30, 61);
+}
+
+.buttons :nth-child(2) {
+    background-color: rgb(28, 59, 63);
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: all 0.75s ease;
+}
+
+.another-major {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.another-major h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.left h3 {
+    color: var(--light-text);
+    margin-top: 1rem;
+}
+
+.right h3 {
+    margin-top: 1.2rem;
+    font-weight: 550;
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    text-transform: uppercase;
+}
+
+.another-major-grid {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.major-bg {
+    margin-top: 2rem;
+    width: 90%;
+    height: 65%;
+    background: url(../img/4k-wallpaper-calm-waters-dark-1252869.jpg) center;
+    border-radius: 0.5rem;
+    filter: hue-rotate(45deg);
+    background-color: rgb(174, 121, 226);
+    background-blend-mode: multiply;
+}
+
+.column {
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 0.2rem solid var(--light);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    color: var(--light);
+}
+
+.row p {
+    margin-left: 0.2rem;
+}
+
+.underline {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left-column {
+    width: 20%;
+    text-align: left;  
+}
+
+.another-major .buttons {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.another-major .buttons > button {
+    margin-bottom: auto;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer {
+    padding-bottom: 1rem;
+    background: rgb(204, 220, 224);
+}
+
+.footer .title {
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.footer p {
+    line-height: 2;
+    margin: 2rem auto;
+    width: 80%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--dark-text);
+}
+
+h2 span {
+    color: var(--light-text);
+}
+
+.intouch {
+    margin: 5rem auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intouch .another-major-line {
+    width: 40%;
+}
+
+.social {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.social a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.social a:hover {
+    transition: all 0.5s ease-in;
+    color: rgb(28, 59, 63);
+}
+
+.end {
+    margin: 0 auto;
+    width: 60%;
+    background: var(--light-text);
+    border-radius: 0.3rem;
+}
+
+
+
+
+
